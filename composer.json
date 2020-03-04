@@ -1,0 +1,52 @@
+{
+    "name": "kodekeep/laravel-attribute-casters",
+    "description": "Custom attribute casters for Laravel Eloquent.",
+    "keywords": [
+        "kodekeep",
+        "laravel-attribute-casters"
+    ],
+    "homepage": "https://github.com/kodekeep/laravel-attribute-casters",
+    "license": "MPL-2.0",
+    "authors": [
+        {
+            "name": "Brian Faust",
+            "email": "brian@kodekeep.com",
+            "homepage": "https://kodekeep.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.4",
+        "illuminate/contracts": "^7.0",
+        "illuminate/support": "^7.0",
+        "kodekeep/cereal": "^1.0"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^2.16",
+        "graham-campbell/analyzer": "^2.4",
+        "orchestra/testbench": "^5.0",
+        "phpstan/phpstan": "^0.12.11",
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "KodeKeep\\AttributeCasters\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "KodeKeep\\AttributeCasters\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test:coverage": "vendor/bin/phpunit --coverage-html=.coverage --coverage-clover=clover.xml",
+        "format": "vendor/bin/php-cs-fixer fix ./",
+        "analyse": "vendor/bin/phpstan analyse --memory-limit=2G"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
