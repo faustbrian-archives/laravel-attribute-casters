@@ -1,41 +1,42 @@
 {
-    "name": "kodekeep/laravel-attribute-casters",
+    "name": "konceiver/laravel-attribute-casters",
     "description": "Custom attribute casters for Laravel Eloquent.",
     "keywords": [
-        "kodekeep",
+        "konceiver",
         "laravel-attribute-casters"
     ],
-    "homepage": "https://github.com/kodekeep/laravel-attribute-casters",
+    "homepage": "https://github.com/konceiver/laravel-attribute-casters",
     "license": "MPL-2.0",
     "authors": [
         {
             "name": "Brian Faust",
-            "email": "brian@kodekeep.com",
-            "homepage": "https://kodekeep.com",
+            "email": "hello@konceiver.dev",
+            "homepage": "https://konceiver.dev",
             "role": "Developer"
         }
     ],
     "require": {
-        "php": "^7.4",
-        "illuminate/contracts": "^7.0",
-        "illuminate/support": "^7.0",
-        "kodekeep/cereal": "^1.0"
+        "php": "^8.0",
+        "illuminate/contracts": "^8.0",
+        "illuminate/support": "^8.0",
+        "konceiver/cereal": "^2.0",
+        "spatie/laravel-package-tools": "^1.9"
     },
     "require-dev": {
-        "friendsofphp/php-cs-fixer": "^2.16",
-        "graham-campbell/analyzer": "^2.4",
-        "orchestra/testbench": "^5.0",
+        "friendsofphp/php-cs-fixer": "^3.0",
+        "graham-campbell/analyzer": "^3.0",
+        "orchestra/testbench": "^6.0",
         "phpstan/phpstan": "^0.12.11",
-        "phpunit/phpunit": "^9.0"
+        "phpunit/phpunit": "^9.5"
     },
     "autoload": {
         "psr-4": {
-            "KodeKeep\\AttributeCasters\\": "src"
+            "Konceiver\\AttributeCasters\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "KodeKeep\\AttributeCasters\\Tests\\": "tests"
+            "Konceiver\\AttributeCasters\\Tests\\": "tests"
         }
     },
     "scripts": {
